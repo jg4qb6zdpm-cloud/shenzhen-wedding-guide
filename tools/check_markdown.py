@@ -130,7 +130,9 @@ def check_links(path: Path, text: str) -> list[str]:
 def check_stage_structure() -> list[str]:
     """Every stage chapter follows the same reading rhythm, in the same order."""
     errors: list[str] = []
-    for path in sorted(DOCS.glob("0[1-9]-*.md")):
+    for path in sorted(DOCS.glob("*.md")):
+        if not re.match(r"^\d{2}-第\d+步-", path.name):
+            continue
         text = path.read_text(encoding="utf-8")
         positions: list[int] = []
         for marker in STAGE_MARKERS:
@@ -172,7 +174,7 @@ def expected_anchor(rel: str) -> str:
     name = Path(rel).name
     if name.startswith("00-"):
         return "ch00"
-    match = re.match(r"0(\d)-", name)
+    match = re.match(r"(\d{2})-", name)
     if match:
         return f"ch{int(match.group(1)):02d}"
     match = re.match(r"([A-E])-", name)

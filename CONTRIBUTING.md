@@ -6,7 +6,7 @@
 
 | 路径 | 放什么 | 谁改 |
 |---|---|---|
-| `docs/` | 正文源文件：00 + 9 步 + 附录 A–E | 内容维护者 |
+| `docs/` | 正文源文件：00 + 10 步 + 附录 A–E | 内容维护者 |
 | `docs/manifest.json` | 版本、日期、适用对象、章节顺序 | 发布者 |
 | `docs/README.md` | 面向读者的全书目录与读法 | 内容维护者 |
 | `templates/` | 可复制填写的预算、砍价模板 | 内容维护者 |
@@ -93,7 +93,7 @@
 
 | 内容 | 出现位置 |
 |---|---|
-| 9 步名称、时间窗口 | `README.md`、`docs/README.md`、`docs/00-开始之前.md`、`深圳备婚一页纸.md`、`docs/E-工具与来源.md` |
+| 10 步名称、时间窗口 | `README.md`、`docs/README.md`、`docs/00-开始之前.md`、`深圳备婚一页纸.md`、`docs/E-工具与来源.md` |
 | 三档价格 | `docs/A-价格标准.md`、`README.md`、`深圳备婚一页纸.md`、`docs/E-工具与来源.md`、`data/` |
 | 版本号 | `docs/manifest.json`、`README.md`、`深圳备婚一页纸.md`、`docs/E-工具与来源.md`、两份模板 |
 | 免责声明 | `README.md`、`LICENSE`、`docs/E-工具与来源.md` |
@@ -124,7 +124,7 @@ python tools/check_markdown.py
 - [ ] `python tools/build_master_md.py` 成功。
 - [ ] `python tools/check_markdown.py` 通过。
 - [ ] 抽查 README 与 docs 目录中的链接。
-- [ ] 抽查 9 步表、三档价格表在 README、docs/README、00、一页纸、附录 E 中一致。
+- [ ] 抽查 10 步表、三档价格表在 README、docs/README、00、一页纸、附录 E 中一致。
 - [ ] 除 `CHANGELOG.md`、`archive/`、README 版本表外，无残留旧版本号。
 
 ## 版本规则

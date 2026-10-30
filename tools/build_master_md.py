@@ -43,7 +43,7 @@ def anchor_for(rel: str) -> str:
     name = Path(rel).name
     if name.startswith("00-"):
         return "ch00"
-    match = re.match(r"0(\d)-", name)
+    match = re.match(r"(\d{2})-", name)
     if match:
         return f"ch{int(match.group(1)):02d}"
     match = re.match(r"([A-E])-", name)

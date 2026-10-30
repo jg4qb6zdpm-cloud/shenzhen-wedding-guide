@@ -67,11 +67,11 @@
 
 ## `timeline.csv`
 
-T-12 到 T+30 的任务清单，`step` 对应主线 9 步。
+T-13 到 T+30 的任务清单，`step` 对应主线 10 步。
 
 | 字段 | 含义 |
 |---|---|
-| `step` | 对应第几步（1–9） |
+| `step` | 对应第几步（1–10） |
 | `phase` | 阶段 |
 | `window` | 时间窗口 |
 | `task` | 任务 |
@@ -84,5 +84,5 @@ T-12 到 T+30 的任务清单，`step` 对应主线 9 步。
 - 用 `spec-tiers.csv` 选规模档，用 `price-tiers-2026.csv` 选品质档。
 - 用 `budget-examples-2026.csv` 做 10 秒初筛，再用 `cost-benchmarks-2026.csv` 填明细。
 - 所有值必须用实际书面报价替换；不要拿“起价”当成交价。
-- 用 `timeline.csv` 导入飞书/Notion/Excel，`step` 列对应主线第 1–9 步，可直接生成项目任务。
+- 用 `timeline.csv` 导入飞书/Notion/Excel，`step` 列对应主线第 1–10 步，可直接生成项目任务。
 - 修改数据后，同步更新 `docs/01-第1步-先谈清楚.md` 与 `docs/A-价格标准.md`。
